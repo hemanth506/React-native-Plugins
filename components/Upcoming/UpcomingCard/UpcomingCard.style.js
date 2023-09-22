@@ -1,29 +1,50 @@
-import { StyleSheet } from 'react-native'
+import {Dimensions, StyleSheet} from 'react-native';
 
-const styles = StyleSheet.create({
+var {width, height} = Dimensions.get('window');
+
+let styles = StyleSheet.create({
   containerLayout: {
     flex: 1,
-    flexDirection: "column",
+    flexDirection: 'column',
+
     paddingTop: 14,
     paddingBottom: 14,
     paddingLeft: 16,
     paddingRight: 16,
     gap: 14,
-    width: "80%",
-    alignSelf: "center",
-    marginBottom: 16
-  },
-  containerStyle: {
+    marginBottom: 16,
     borderRadius: 20,
-    borderColor: "#F4F4F4",
-    backgroundColor: "#FFF",
-    // backgroundColor: "yellow",
-    shadowColor: "#00000033",
+
+    // paddingTop: height * 0.017,
+    // paddingBottom: height * 0.017,
+    // paddingLeft: width * 0.027,
+    // paddingRight: width * 0.027,
+    // gap: height * 0.014,
+    // marginBottom: height * 0.02,
+    // borderRadius: width * 0.04,
+
+    width: '80%',
+    alignSelf: 'center',
+    borderColor: '#F4F4F4',
+    backgroundColor: '#FFF',
+    // backgroundColor: 'yellow',
     // alignItems: "center"
+  },
+  containerShadowIOS: {
+    shadowColor: 'rgba(0, 0, 0, 0.20)',
+    shadowOffset: {width: 0, height: 6},
+    shadowOpacity: 1,
+    shadowRadius: 30,
+  },
+  containerShadowAndroid: {
+    elevation: 10
   },
   poster: {
     width: 311,
     height: 340,
+
+    // width: width * 0.74,
+    // height: height * 0.51,
 
     // flex: 1,
     // aspectRatio: 1.5,
@@ -37,90 +58,302 @@ const styles = StyleSheet.create({
     paddingRight: 4,
     paddingTop: 2,
     paddingBottom: 2,
-    backgroundColor: "#DFFFE2",
-    borderRadius: 100
+
+    // gap: height * 0.007,
+    // paddingLeft: width * 0.007,
+    // paddingRight: width * 0.007,
+    // paddingTop: height * 0.001,
+    // paddingBottom: height * 0.001,
+
+    backgroundColor: '#DFFFE2',
+    borderRadius: 100,
   },
   timer: {
     width: 14,
     height: 14,
-    alignSelf: "center"
+    // width: width * 0.02,
+    // height: height * 0.015,
+    alignSelf: 'center',
   },
   timeText: {
-    color: "#00B712",
-    fontFamily: "Geomanist",
-    fontSize: 10
+    color: '#00B712',
+    fontFamily: 'Geomanist',
+    fontSize: 10,
+    // fontSize: width * 0.018,
   },
 
   tournamentDetails: {
-    alignItems: "flex-start",
-    gap: 6
+    alignItems: 'flex-start',
+    gap: 6,
+    // gap: height * 0.007
   },
 
   tournamentName: {
-    color: "#1C1C1C",
-    fontFamily: "Geomanist",
+    color: '#1C1C1C',
+    fontFamily: 'Geomanist',
+    fontWeight: 'bold',
     fontSize: 20,
-    fontWeight: "bold",
-    lineHeight: 26
+    lineHeight: 26,
+
+    // fontSize: width * 0.043,
+    // lineHeight: height * 0.027,
   },
 
   calender: {
     marginRight: 6,
-    alignSelf: 'center'
+    // marginRight: width * 0.007,
+    alignSelf: 'center',
   },
-  dateView :{
-    flexDirection: 'row'
+  dateView: {
+    flexDirection: 'row',
   },
   date: {
-    color: "#777777",
+    color: '#777777',
+    fontWeight: '400',
+    fontFamily: 'Geomanist',
+    fontStyle: 'normal',
     fontSize: 12,
-    fontWeight: "400",
-    fontFamily: "Geomanist",
-    fontStyle: "normal",
-    lineHeight: 15.6
+    lineHeight: 15.6,
+    // fontSize: width * 0.019,
+    // lineHeight: height * 0.015,
   },
   entryFeeView: {
     gap: 6,
-    alignItems: "baseline",
-    flexDirection: "row"
+    // gap: width * 0.01,
+
+    alignItems: 'baseline',
+    flexDirection: 'row',
   },
   feeAmount: {
-    color: "#1C1C1C",
-    fontFamily: "Geomanist",
+    color: '#1C1C1C',
+    fontFamily: 'Geomanist',
+    fontStyle: 'normal',
+    fontWeight: 'bold',
     fontSize: 16,
-    fontStyle: "normal",
-    fontWeight: "bold"
+    // fontSize: width * 0.03,
   },
   perTeam: {
-    color: "#A4A4A4",
-    fontFamily: "Geomanist",
+    color: '#A4A4A4',
+    fontFamily: 'Geomanist',
+    fontStyle: 'normal',
+    fontWeight: '400',
     fontSize: 12,
-    fontStyle: "normal",
-    fontWeight: "400",
-    lineHeight: 15.6
+    lineHeight: 15.6,
+
+    // fontSize: width * 0.019,
+    // lineHeight: 15.6,
   },
   buttonType: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    backgroundColor: '#FF451A',
+
     paddingTop: 14,
     paddingBottom: 14,
     paddingLeft: 8,
     paddingRight: 8,
-
-    justifyContent: "center",
-    alignItems: "center",
     gap: 8,
-    alignSelf: "stretch",
     borderRadius: 10,
-    backgroundColor: "#FF451A"
+
+    // paddingTop: height * 0.017,
+    // paddingBottom: height * 0.017,
+    // paddingLeft: width * 0.01,
+    // paddingRight: width * 0.01,
+    // gap: height * 0.01,
+    // borderRadius: width * 0.019,
   },
   buttonText: {
-    color: "#FFF",
+    color: '#FFF',
     textAlign: 'center',
+    fontStyle: 'normal',
+    fontWeight: '400',
     fontSize: 14,
-    fontStyle: "normal",
-    fontWeight: "400",
-    lineHeight: 14
-  }
+    lineHeight: 14,
+    // fontSize: width * 0.023,
+    // lineHeight: height * 0.015,
+  },
+});
+if (height / 2 > width) {
+  console.log('Phone');
+} else {
+  console.log('tablet');
+  styles = StyleSheet.create({
+    containerLayout: {
+      flex: 1,
+      flexDirection: 'column',
+      // paddingTop: 14,
+      // paddingBottom: 14,
+      // paddingLeft: 16,
+      // paddingRight: 16,
+      paddingTop: height * 0.017,
+      paddingBottom: height * 0.017,
 
-})
+      paddingLeft: width * 0.027,
+      paddingRight: width * 0.027,
+      // gap: 14,
+      gap: height * 0.014,
+      width: '80%',
+      alignSelf: 'center',
+      // marginBottom: 16,
+      marginBottom: height * 0.02,
+
+      // borderRadius: 35,
+      borderRadius: width * 0.04,
+
+      borderColor: '#F4F4F4',
+      backgroundColor: '#FFF',
+      // backgroundColor: 'yellow',
+      shadowColor: '#00000033',
+      // alignItems: "center"
+    },
+    containerShadowIOS: {
+      shadowColor: 'rgba(0, 0, 0, 0.20)',
+      shadowOffset: {width: 0, height: 6},
+      shadowOpacity: 1,
+      shadowRadius: 30,
+    },
+    containerShadowAndroid: {
+      elevation: 10
+    },
+    poster: {
+      // width: 611,
+      // height: 640,
+
+      // width: width * 0.74,
+      // height: height * 0.51,
+
+      width: width * 0.74,
+      height: height * 0.51,
+
+      // flex: 1,
+      // aspectRatio: 1.5,
+      // resizeMode: 'contain',
+    },
+    timeLeftView: {
+      // display: 'flex',
+      flexDirection: 'row',
+      // gap: 6,
+      // paddingLeft: 4,
+      // paddingRight: 4,
+      // paddingTop: 2,
+      // paddingBottom: 2,
+
+      gap: height * 0.007,
+      paddingLeft: width * 0.007,
+      paddingRight: width * 0.007,
+      paddingTop: height * 0.001,
+      paddingBottom: height * 0.001,
+
+      backgroundColor: '#DFFFE2',
+      borderRadius: 100,
+    },
+    timer: {
+      // width: 14,
+      // height: 14,
+      width: width * 0.02,
+      height: height * 0.015,
+      alignSelf: 'center',
+    },
+    timeText: {
+      color: '#00B712',
+      fontFamily: 'Geomanist',
+      // fontSize: 10
+      fontSize: width * 0.018,
+    },
+
+    tournamentDetails: {
+      alignItems: 'flex-start',
+      // gap: 6,
+      gap: height * 0.007,
+    },
+
+    tournamentName: {
+      color: '#1C1C1C',
+      fontFamily: 'Geomanist',
+      fontWeight: 'bold',
+      // fontSize: 20,
+      // lineHeight: 26,
+
+      fontSize: width * 0.043,
+      lineHeight: height * 0.027,
+    },
+
+    calender: {
+      // marginRight: 6,
+      marginRight: width * 0.007,
+      alignSelf: 'center',
+    },
+    dateView: {
+      flexDirection: 'row',
+    },
+    date: {
+      color: '#777777',
+      fontWeight: '400',
+      fontFamily: 'Geomanist',
+      fontStyle: 'normal',
+      // fontSize: 12,
+      // lineHeight: 15.6,
+      fontSize: width * 0.019,
+      lineHeight: height * 0.015,
+    },
+    entryFeeView: {
+      // gap: 6,
+      gap: width * 0.01,
+
+      alignItems: 'baseline',
+      flexDirection: 'row',
+    },
+    feeAmount: {
+      color: '#1C1C1C',
+      fontFamily: 'Geomanist',
+      fontStyle: 'normal',
+      fontWeight: 'bold',
+      // fontSize: 16,
+      fontSize: width * 0.03,
+    },
+    perTeam: {
+      color: '#A4A4A4',
+      fontFamily: 'Geomanist',
+      fontStyle: 'normal',
+      fontWeight: '400',
+      // fontSize: 12,
+      // lineHeight: 15.6,
+
+      fontSize: width * 0.019,
+      lineHeight: 15.6,
+    },
+    buttonType: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      alignSelf: 'stretch',
+      backgroundColor: '#FF451A',
+
+      // paddingTop: 14,
+      // paddingBottom: 14,
+      // paddingLeft: 8,
+      // paddingRight: 8,
+      // gap: 8,
+      // borderRadius: 10,
+
+      paddingTop: height * 0.017,
+      paddingBottom: height * 0.017,
+      paddingLeft: width * 0.01,
+      paddingRight: width * 0.01,
+      gap: height * 0.01,
+      borderRadius: width * 0.019,
+    },
+    buttonText: {
+      color: '#FFF',
+      textAlign: 'center',
+      fontStyle: 'normal',
+      fontWeight: '400',
+      // fontSize: 14,
+      // lineHeight: 14,
+      fontSize: width * 0.023,
+      lineHeight: height * 0.015,
+    },
+  });
+}
 
 export default styles;
