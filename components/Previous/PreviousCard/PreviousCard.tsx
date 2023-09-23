@@ -1,12 +1,22 @@
 import { Text, View, Image, TouchableOpacity, Platform } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
+import {StackNavigationProp} from '@react-navigation/stack';
+import styles from './PreviousCard.style';
+import { RootStackparamList } from '../../../constants/types';
+
+
 const timer = require('../../../assets/images/timer2.png');
 const calender = require('../../../assets/images/calender.png');
 
-import styles from './PreviousCard.style';
+
 let platform = Platform.OS;
 console.log("🚀 ~ file: PreviousCard.tsx:9 ~ platform:", platform)
+
+type previousCardProps = StackNavigationProp<RootStackparamList, "UserHome">
+
 export default function PreviousCard({ item }: { item: any }): JSX.Element {
+  const navigation = useNavigation<previousCardProps>();
   // console.log("🚀 ~ UpcomingCard.tsx:8")
   // if (height / 2 > width) {
   //   console.log("previous Phone")
@@ -27,7 +37,7 @@ export default function PreviousCard({ item }: { item: any }): JSX.Element {
           <Image source={calender} style={styles.calender} />
           <Text style={styles.date}>{item.fromAndTo}</Text>
         </View>
-        <TouchableOpacity style={styles.buttonType}>
+        <TouchableOpacity style={styles.buttonType} onPress={() => navigation.navigate("TournamentGallery")}>
           <Text style={styles.buttonText}>View Tournament Gallery</Text>
         </TouchableOpacity>
       </View>
