@@ -54,7 +54,7 @@ export default function UpcomingTournaments(): JSX.Element {
     // </SafeAreaView>
     
     <SafeAreaView style={{ flex: 1 }}>
-      <Text style={styles.headingText}>UpcomingTournaments</Text>
+      {/* <Text style={styles.headingText}>UpcomingTournaments</Text> */}
       {
         data.map((item) => <UpcomingCard key={item.tournamentName} item={item} />)
       }

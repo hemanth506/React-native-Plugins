@@ -7,12 +7,12 @@ import styles from './UpcomingCard.style';
 var { width, height } = Dimensions.get('window');
 let platform = Platform.OS;
 export default function UpcomingCard({ item }: { item: any }): JSX.Element {
-  console.log("🚀 ~ UpcomingCard.tsx:8 ~ Dimentions:", width, height)
-  if (height / 2 > width) {
-    console.log("Upcoming Phone")
-  } else {
-    console.log("Upcoming tab")
-  }
+  // console.log("🚀 ~ UpcomingCard.tsx:8")
+  // if (height / 2 > width) {
+  //   console.log("Upcoming Phone")
+  // } else {
+  //   console.log("Upcoming tab")
+  // }
   return (
     <View style={[styles.containerLayout, platform === "ios" ? styles.containerShadowIOS : styles.containerShadowAndroid]}>
       <Image source={item.poster} style={styles.poster} />

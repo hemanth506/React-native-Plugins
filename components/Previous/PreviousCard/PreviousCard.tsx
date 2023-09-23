@@ -1,19 +1,18 @@
-import { Text, View, Image, TouchableOpacity, Dimensions, Platform } from 'react-native'
+import { Text, View, Image, TouchableOpacity, Platform } from 'react-native'
 import React from 'react'
 const timer = require('../../../assets/images/timer2.png');
 const calender = require('../../../assets/images/calender.png');
 
 import styles from './PreviousCard.style';
-var { width, height } = Dimensions.get('window');
 let platform = Platform.OS;
 console.log("🚀 ~ file: PreviousCard.tsx:9 ~ platform:", platform)
 export default function PreviousCard({ item }: { item: any }): JSX.Element {
-  console.log("🚀 ~ UpcomingCard.tsx:8 ~ Dimentions:", width, height)
-  if (height / 2 > width) {
-    console.log("previous Phone")
-  } else {
-    console.log("previous tab")
-  }
+  // console.log("🚀 ~ UpcomingCard.tsx:8")
+  // if (height / 2 > width) {
+  //   console.log("previous Phone")
+  // } else {
+  //   console.log("previous tab")
+  // }
 
   return (
     <View style={[styles.containerLayout, platform === "ios" ? styles.containerShadowIOS : styles.containerShadowAndroid]}>

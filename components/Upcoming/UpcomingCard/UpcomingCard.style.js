@@ -12,7 +12,8 @@ let styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     gap: 14,
-    marginBottom: 16,
+    marginBottom: 14,
+    marginTop: 12,
     borderRadius: 20,
 
     // paddingTop: height * 0.017,
@@ -37,7 +38,7 @@ let styles = StyleSheet.create({
     shadowRadius: 30,
   },
   containerShadowAndroid: {
-    elevation: 10
+    elevation: 10,
   },
   poster: {
     width: 311,
@@ -197,6 +198,7 @@ if (height / 2 > width) {
       alignSelf: 'center',
       // marginBottom: 16,
       marginBottom: height * 0.02,
+      marginTop: height * 0.02,
 
       // borderRadius: 35,
       borderRadius: width * 0.04,
@@ -214,7 +216,7 @@ if (height / 2 > width) {
       shadowRadius: 30,
     },
     containerShadowAndroid: {
-      elevation: 10
+      elevation: 10,
     },
     poster: {
       // width: 611,

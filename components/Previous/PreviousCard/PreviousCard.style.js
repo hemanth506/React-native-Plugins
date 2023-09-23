@@ -1,4 +1,4 @@
-import {Dimensions, StyleSheet, Platform} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 var {width, height} = Dimensions.get('window');
 
@@ -12,7 +12,8 @@ let styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 16,
     gap: 14,
-    marginBottom: 16,
+    marginBottom: 14,
+    marginTop: 12,
     borderRadius: 20,
 
     // paddingTop: height * 0.017,
@@ -175,6 +176,7 @@ if (height / 2 > width) {
       alignSelf: 'center',
       // marginBottom: 16,
       marginBottom: height * 0.02,
+      marginTop: height * 0.02,
 
       // borderRadius: 35,
       borderRadius: width * 0.04,

@@ -34,7 +34,7 @@ export default function PreviousTournaments(): JSX.Element {
   ]
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <Text style={styles.headingText}>PreviousTournaments</Text>
+      {/* <Text style={styles.headingText}>PreviousTournaments</Text> */}
       {
         data.map((item) => <PreviousCard key={item.tournamentName} item={item} />)
       }
