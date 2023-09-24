@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function RegisterationDetails() {
+export default function TournamentDetailsScreen() {
   return (
     <View>
-      <Text>RegisterationDetails</Text>
+      <Text>TournamentDetailsScreen</Text>
     </View>
   )
 }

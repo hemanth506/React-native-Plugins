@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function TournamentGallery() {
+export default function TournamentGalleryScreen() {
   return (
     <View>
       <Text>TournamentGallery</Text>
