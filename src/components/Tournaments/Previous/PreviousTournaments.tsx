@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
 import PreviousCard from './PreviousCard/PreviousCard';
-const poster1 = require('../../assets/images/poster1.png');
-const poster2 = require('../../assets/images/poster2.png');
+const poster1 = require('../../../assets/images/poster1.png');
+const poster2 = require('../../../assets/images/poster2.png');
 
 export default function PreviousTournaments(): JSX.Element {
   const data = [

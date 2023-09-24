@@ -1,12 +1,13 @@
 import { Text, View, Image, TouchableOpacity, Dimensions, Platform } from 'react-native'
 import React from 'react'
-const timer = require('../../../assets/images/timer.png');
-const calender = require('../../../assets/images/calender.png');
+const timer = require('../../../../assets/images/timer.png');
+const calender = require('../../../../assets/images/calender.png');
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 import styles from './UpcomingCard.style';
-import { RootStackparamList } from '../../../constants/types';
+import { RootStackparamList } from '../../../../constants/types';
+
 var { width, height } = Dimensions.get('window');
 let platform = Platform.OS;
 
@@ -14,7 +15,7 @@ type upcomingCardProps = StackNavigationProp<RootStackparamList, "UserHome">
 
 export default function UpcomingCard({ item }: { item: any }): JSX.Element {
   const navigation = useNavigation<upcomingCardProps>();
-  console.log("🚀 ~ file: UpcomingCard.tsx:12 ~ UpcomingCard ~ navigation:", navigation)
+  // console.log("🚀 ~ file: UpcomingCard.tsx:12 ~ UpcomingCard ~ navigation:", navigation)
 
 
   // console.log("🚀 ~ UpcomingCard.tsx:8")

@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, Text, View, StatusBar, TouchableOpacity, Image 
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Memories from '../components/Memories/Memories'
-import Tournaments from '../components/Tournaments/Tournaments'
+import Tournaments from "../components/Tournaments/Tournaments"
 import Styling from '../constants/Styling'
 const heart = require("../assets/images/heart.png");
 const basketball = require("../assets/images/basketball.png");

@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, ScrollView, FlatList, SafeAreaView } from 'react-native'
 import React from 'react'
 import UpcomingCard from './UpcomingCard/UpcomingCard'
-const poster1 = require('../../assets/images/poster1.png');
-const poster2 = require('../../assets/images/poster2.png');
+const poster1 = require('../../../assets/images/poster1.png');
+const poster2 = require('../../../assets/images/poster2.png');
 
 export default function UpcomingTournaments(): JSX.Element {
   const data = [

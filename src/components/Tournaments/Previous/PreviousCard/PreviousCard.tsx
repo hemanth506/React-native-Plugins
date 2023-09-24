@@ -3,11 +3,12 @@ import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import styles from './PreviousCard.style';
-import { RootStackparamList } from '../../../constants/types';
+import { RootStackparamList } from '../../../../constants/types';
 
 
-const timer = require('../../../assets/images/timer2.png');
-const calender = require('../../../assets/images/calender.png');
+const calender = require('../../../../assets/images/calender.png');
+
+const timer = require('../../../../assets/images/timer2.png');
 
 
 let platform = Platform.OS;

@@ -1,7 +1,7 @@
 import { Text, View, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react'
-import UpcomingTournaments from '../Upcoming/UpcomingTournaments'
-import PreviousTournaments from '../Previous/PreviousTournaments'
+import UpcomingTournaments from './Upcoming/UpcomingTournaments'
+import PreviousTournaments from './Previous/PreviousTournaments'
 
 import styles from './Tournaments.style'
 

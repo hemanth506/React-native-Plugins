@@ -1,8 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import UserMainScreen from './screens/UserMainScreen';
-import RegisterationDetails from './screens/RegisterationDetailsScreen';
-import TournamentGallery from './screens/TournamentGalleryScreen';
+import UserMainScreen from './src/screens/UserMainScreen';
+import RegisterationDetails from './src/screens/RegisterationDetailsScreen';
+import TournamentGallery from './src/screens/TournamentGalleryScreen';
 
 const Stack = createNativeStackNavigator();
 
