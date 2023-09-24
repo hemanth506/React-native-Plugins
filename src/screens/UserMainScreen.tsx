@@ -1,19 +1,17 @@
-import { ScrollView, StyleSheet, Text, View, StatusBar, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, Text, View, StatusBar, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import Memories from '../components/Memories/Memories'
 import Tournaments from "../components/Tournaments/Tournaments"
-import Styling from '../constants/Styling'
 const heart = require("../assets/images/heart.png");
 const basketball = require("../assets/images/basketball.png");
 
-
+// barStyle={Styling.NOTCH_TEXT_COLOR}
 export default function UserMainScreen() {
   const [isTournaments, setIsTournaments] = useState(true)
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar backgroundColor={Styling.NOTCH_BACKGROUND_COLOR} />
 
       {/* Tournaments section */}
       {isTournaments ? <Tournaments /> : <Memories /> }

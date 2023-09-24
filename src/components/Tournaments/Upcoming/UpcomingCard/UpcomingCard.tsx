@@ -43,7 +43,7 @@ export default function UpcomingCard({ item }: { item: any }): JSX.Element {
           <Text style={styles.feeAmount}>₹ {item.entryFee}</Text>
           <Text style={styles.perTeam}>per team</Text>
         </View>
-        <TouchableOpacity style={styles.buttonType} onPress={() => navigation.navigate("RegisterationDetails")}>
+        <TouchableOpacity style={styles.buttonType} onPress={() => navigation.navigate("TournamentDetails", {item: item})}>
           <Text style={styles.buttonText}>Register Now</Text>
         </TouchableOpacity>
       </View>

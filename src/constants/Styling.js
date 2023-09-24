@@ -1,5 +1,7 @@
 const Styling = {
-  NOTCH_BACKGROUND_COLOR: "#FF451A"
+  NOTCH_BACKGROUND_COLOR: "#FFFFFF",
+  NOTCH_TEXT_COLOR: "dark-content",
+  BACKGROUND_COLOR: "#FFFFFF"
 }
 
 
